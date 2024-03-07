@@ -2,6 +2,7 @@ import { Grid } from '@mui/material';
 import PageBlock from '../../layouts/PageBlock';
 import ManufacturerTable from './BOMConfig/ManufacturerTable';
 import MaterialTypeTable from './BOMConfig/MaterialTypeTable';
+import MaterialUnitTable from './BOMConfig/MaterialUnitTable';
 
 const AdminToolsBOMConfig: React.FC = () => {
   return (
@@ -12,6 +13,9 @@ const AdminToolsBOMConfig: React.FC = () => {
         </Grid>
         <Grid item direction="column" alignSelf="right" xs={12} md={6}>
           <MaterialTypeTable />
+        </Grid>
+        <Grid item direction="column" alignSelf="right" xs={12} md={6}>
+          <MaterialUnitTable />
         </Grid>
       </Grid>
     </PageBlock>
